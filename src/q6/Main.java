@@ -1,0 +1,116 @@
+package q6;
+
+
+class Hobbies{
+	String h1,h2;
+
+	public Hobbies(String h1, String h2) {
+		super();
+		this.h1 = h1;
+		this.h2 = h2;
+	}
+
+	@Override
+	public String toString() {
+		return "Hobbies [h1=" + h1 + ", h2=" + h2 + "]";
+	}
+	
+}
+class Address{
+	String areaname,cityname;
+
+	public Address(String areaname, String cityname) {
+		super();
+		this.areaname = areaname;
+		this.cityname = cityname;
+	}
+
+	@Override
+	public String toString() {
+		return "Address [areaname=" + areaname + ", cityname=" + cityname + "]";
+	}
+	
+}
+class Emp{
+	String name;int id;
+	Address address;
+	Hobbies hobbies;
+	public Emp(String name, int id, Address address, Hobbies hobbies) {
+		super();
+		this.name = name;
+		this.id = id;
+		this.address = address;
+		this.hobbies = hobbies;
+	}
+	@Override
+	public String toString() {
+		return "Emp [name=" + name + ", id=" + id + ", address=" + address + ", hobbies=" + hobbies + "]";
+	}
+	
+}
+public class Main{
+	public static void main(String[] args) {
+		Hobbies hobbies = new Hobbies("n1", "sports");
+		Address address = new Address("mumbai", "pune");
+		Emp emp = new Emp("bappi", 2, address, hobbies);
+		System.out.println(emp);
+	}
+}
+//
+//class Hobbies{
+//	String h1,h2;
+//
+//	public Hobbies(String h1, String h2) {
+//		super();
+//		this.h1 = h1;
+//		this.h2 = h2;
+//	}
+//
+//	@Override
+//	public String toString() {
+//		return "Hobbies [h1=" + h1 + ", h2=" + h2 + "]";
+//	}
+//	
+//	
+//}
+//class Address {
+//	String cityname,areaname;
+//
+//	public Address(String cityname, String areaname) {
+//		super();
+//		this.cityname = cityname;
+//		this.areaname = areaname;
+//	}
+//
+//	@Override
+//	public String toString() {
+//		return "Address [cityname=" + cityname + ", areaname=" + areaname + "]";
+//	}
+//	
+//}
+//class Emp{
+//	String name;int id;
+//	Address address;
+//	Hobbies hobbies;
+//	public Emp(String name, int id, Address address, Hobbies hobbies) {
+//		super();
+//		this.name = name;
+//		this.id = id;
+//		this.address = address;
+//		this.hobbies = hobbies;
+//	}
+//	@Override
+//	public String toString() {
+//		return "Emp [name=" + name + ", id=" + id + ", address=" + address + ", hobbies=" + hobbies + "]";
+//	}
+//	
+//}
+//public class Main {
+//public static void main(String[] args) {
+//	Address address = new Address("borivali", "mumbai");
+//	Hobbies hobbies  = new Hobbies("s", "w");
+//	Emp emp  = new Emp("bappi", 2, address, hobbies);
+//	System.out.println(emp);
+//	
+//}
+//}
